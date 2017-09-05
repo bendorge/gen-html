@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Muli');
+/* Added for Arliss Kurtz */
+.v-middle {
+	vertical-align: middle;	
+}
+
+.show-for-small-only {
+	background-color:  #654321;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%; 
+  clear: both;
+  float: none;
+}
+
+.home-page-content {
+	position: relative;
+	left: 10px;
+}
+
+.footer {
+	background: rgba(2,20,89,1.00);	
+	min-height: 100px;	
+	text-align: center;
+	padding: 40px;
+	color: white;
+}
+
+/* Font adjustments for Arliss */	
+@import url('http://fonts.googleapis.com/css?family=Muli');
+h1, h2, h3, td {
+	font-family: Muli,sans-serif;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+
+p, li {
+	font-family: Georgia, sans-serif;
+	font-size: 1em;
+}
+
+.top-bar-section ul li a {
+	font-family: Muli, sans-serif;
+	font-size: 1em;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+	  /* Change for Arliss Kurtz */
+      background: rgb(2,20,89);
+}
+
+@media only screen {
+	.top-bar-section .dropdown, .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li a {
+		  /* Change for Arliss Kurtz */
+		  background-color: rgb(2,20,89);
+	}
+
+	.top-bar {
+	  background: -webkit-linear-gradient(#0A1036, #006796); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(#0A1036, #006796); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(#0A1036, #006796); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(#0A1036, #006796); /* Standard syntax */
+	}
+}
+
+@media only screen and (min-width: 40.063em) {
+	.top-bar-section .dropdown, .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li a {
+		  /* Change for Arliss Kurtz */
+		  background-color: rgb(2,20,89);
+	}
+
+	.top-bar, .top-bar-section li:not(.has-form) a:not(.button) {
+	  background: -webkit-linear-gradient(#0A1036, #006796); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(#0A1036, #006796); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(#0A1036, #006796); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(#0A1036, #006796); /* Standard syntax */
+	}
+}
+
+

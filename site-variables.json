@@ -1,0 +1,43 @@
+var site_variables = {
+	"common" : {
+		"copyright" : "&copy; 2017 A Great Company",
+		"add_yours_here" : "your value here",
+		"company" : "A Great Company",
+		"soundbite" : "We strive to do awesome things"
+	},
+	"data" : [
+		{
+			"filename" : "about.html",
+			"layout" : "layout.html",
+			"variables" : {
+				"title" : "About A Great Company"
+			}
+		},
+
+		{
+			"filename" : "contact.html",
+			"layout" : "contact-layout.html",
+			"variables" : {
+				"title" : "Contact Jane Doe"
+			}
+		},
+
+		{
+			"filename" : "index.html",
+			"layout" : "home-page.html",
+			"variables" : {
+				"title" : "A Great Company"
+			}
+		},
+
+		{
+			"filename" : "services.html",
+			"layout" : "layout.html",
+			"variables" : {
+				"title" : "Services Offered"
+			}
+		}
+
+	]
+}
+// common, data, filename, and variables are reserved names

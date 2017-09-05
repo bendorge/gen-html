@@ -29,8 +29,8 @@ Here are the key things to know about the contents of the project folder:
 
 * __build/__ - your css, img, and js files along with any auto-generated web pages that are created by __gen-html__
 * __layouts/__ - your layout templates
-* __pages/__ - your page content (each page should have unique content and is )
-* __snippets__ - your reusable HTML snippets
+* __pages/__ - your page content (each page should have unique content)
+* __snippets/__ - your reusable HTML snippets
 * __gen-html.js__ - your static site generator script (where the magic happens)
 * __site-variables.json__ - your rules for site-level and page-level variables and assigned layouts
 
@@ -47,7 +47,8 @@ __Note:__ You can build complete templates if you prefer, but if you want to inc
 
 layout.html example:
 
-`<!doctype html>
+```
+<!doctype html>
 <html>
 {{head}}
 
@@ -56,7 +57,8 @@ layout.html example:
 {{common-page-structure}}
 {{footer}}
 </body>
-</html>`
+</html>
+```
 
 2. Add placeholders for snippets: 
 

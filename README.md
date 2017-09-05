@@ -36,7 +36,9 @@ Here are the key things to know about the contents of the project folder:
 
 ## Usage
 
-1. In the *layouts* folder, create .html template files for each unique web page layout you are going to use. 
+### 1. Create template files
+
+In the *layouts* folder, create .html template files for each unique web page layout you are going to use. 
 
 Example file names:
 
@@ -60,7 +62,7 @@ layout.html example:
 </html>
 ```
 
-2. Add placeholders for snippets: 
+### 2. Add placeholders for snippets
 
 The text in the placeholder should match the file name of the snippet, except for the file extension:
 
@@ -70,7 +72,9 @@ matches *menu.html*
 
 __Note:__ If you are building a home page layout, you can add the reserved `[[content]]` placeholder in the layout file to indicate to __gen-html__ to insert the unique home page content. You must type it exactly as shown.
 
-3. Create your reusable HTML snippets and save them with the .html extension in the *snippets* folder. __Note:__ These aren't intended to be valid HTML files.
+### 3. Create snippets
+
+Create your reusable HTML snippets and save them with the .html extension in the *snippets* folder. __Note:__ These aren't intended to be valid HTML files.
 
 Snippet example: 
 
@@ -112,7 +116,7 @@ Snippet example:
 <!-- End Nav Snippet -->
 ```
 
-4. Add variable placeholders in your snippets.
+### 4. Add variable placeholders in your snippets
 
 __Note:__ `common`, `data`, `filename`, and `variables` are reserved names
 
@@ -139,7 +143,9 @@ If your snippet will insert the unique content for the web page, add the `[[cont
 </div>
 ```
 
-5. In the *pages* folder, create the unique content files that will replace the `[[content]]` placeholder when processed by __gen-html__. The following is the contents of the sample *about.html* file in the *pages* folder:
+### 5. Create the pages
+
+In the *pages* folder, create the unique content files that will replace the `[[content]]` placeholder when processed by __gen-html__. The following is the contents of the sample *about.html* file in the *pages* folder:
 
 ```
 <h1>About the Service Provider</h1>
@@ -151,7 +157,9 @@ If your snippet will insert the unique content for the web page, add the `[[cont
 <p>Donec ac risus vitae tortor tincidunt ultrices at ullamcorper augue. Donec commodo vel neque sed accumsan. Praesent nec elit malesuada, molestie metus semper, elementum lorem. Sed faucibus risus et malesuada ullamcorper. Nulla scelerisque interdum tellus, a lobortis urna tempor ut. Donec eleifend arcu quis ex condimentum, non cursus mauris volutpat.</p>
 ```
 
-6. Edit the *site-variables.json* file to include all of the site-level (common) variable names and values and the page-level file names, assigned layouts, and variables.
+### 6. Edit *site-variables.json*
+
+Edit the *site-variables.json* file to include all of the site-level (common) variable names and values and the page-level file names, assigned layouts, and variables.
 
 *site-variables.json* example with common variables only:
 
@@ -250,10 +258,19 @@ var site_variables = {
 // common, data, filename, and variables are reserved names
 ```
 
+### 7. Build a new site
+
+From the command line, run the following line at the root of your project folder:
+
+`node gen-html.js`
+
+Your newly assembled HTML files will appear in the *build* folder.
+
 ## Potential issues
 
 * Subfolders in the *layouts*, *pages*, and *snippets* folders have not been tested 
 * __gen-html__ has not been stress-tested with hundreds or thousands of pages
+* Not tested on Linux or Mac
 
 ## Author
 
